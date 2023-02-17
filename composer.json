@@ -1,0 +1,14 @@
+{
+    "name": "polarnix/framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "polarnix",
+            "email": "polarnix@pm.me"
+        }
+    ],
+    "require": {
+        "bramus/router": "^1.6"
+    }
+}
