@@ -6,13 +6,22 @@ import postcss from 'rollup-plugin-postcss';
 
 export default {
   input: 'assets/script.js',
-  output: {
-    dir: '.framework/build',
-    format: 'es',
-    plugins: [
-      terser()
-    ]
-  },
+  output: [
+    {
+      dir: '.framework/build',
+      format: 'es',
+      plugins: [
+        terser()
+      ]
+    },
+    {
+      dir: '.framework/build-static',
+      format: 'es',
+      plugins: [
+        terser()
+      ]
+    }
+  ],
   plugins: [
     nodeResolve(),
     postcss(),
