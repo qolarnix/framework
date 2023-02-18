@@ -30,7 +30,7 @@ function locate_template($template_names, $load = false, $require_once = true, $
     }
     else {
       trigger_error(
-        'Unable to locate template in ' . $path_pages . ' or ' . $path_components,
+        'Unable to locate template in ' . $path_pages . ' or ' . $path_components . ' or ' . $path_index,
         E_USER_ERROR
       );
     }
