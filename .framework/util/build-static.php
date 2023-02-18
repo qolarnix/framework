@@ -9,7 +9,7 @@ $site_content = file_get_contents('http://localhost:' . $site_port . '');
 $tidy_config = array(
   'indent' => true,
   'output-xhtml' => true,
-  'wrap' => 200
+  'wrap' => 200,
 );
 $tidy = new \tidy;
 $tidy->parseString($site_content, $tidy_config, 'utf8');
